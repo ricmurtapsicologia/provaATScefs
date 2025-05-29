@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Amostra de Prova – ATS 2025</title>
-	<meta name="description" content="Amostra de Prova – Curso de Atendimento a Tentativas de Suicídio – CBMMG">
+	<title>Mostra de Prova – ATS 2025</title>
+	<meta name="description" content="Mostra de Prova – Curso de Atendimento a Tentativas de Suicídio – CBMMG">
 	<meta name="author" content="Major BM Richelmy Murta Pinto">
 	<!-- WhatsApp Preview Image -->
 	<meta property="og:image" content="https://i.pinimg.com/1200x/41/e2/c4/41e2c400b1bcd118b0dc559350430273.jpg">
@@ -33,7 +33,7 @@
 		body {
 		  font-family: var(--font-sans);
 		  background: url('https://i.pinimg.com/originals/38/70/c5/3870c5a678e72a0c16ca58914e14df3f.jpg')
-		              center/cover no-repeat fixed;
+		    center/cover no-repeat fixed;
 		  color: #fff;
 		  min-height: 100vh;
 		  display: flex;
@@ -154,14 +154,8 @@
 		  }
 		}
 		
-		/* Em dispositivos móveis, remove overlays para mais leveza */
-		@media (max-width: 768px) {
-		  header,
-		  .exam-container {
-		    background: none !important;
-		    box-shadow: none !important;
-		  }
-		}
+		/* Mantém o overlay (fumê) em todas as larguras de tela */
+		/* (removida a regra que desativava o overlay em mobile) */
 	</style>
 </head>
 
@@ -180,18 +174,17 @@
 				<li> Acesse o botão correspondente ao seu pelotão para visualizar o <strong>gabarito individual</strong> da sua prova. </li>
 				<li> Use o botão <strong>Prova Corrigida</strong> para conferir as justificativas das questões, especialmente aquelas que geraram dúvida. </li>
 			</ul>
-			<p> Caso identifique alguma inconsistência ou divergência, siga os itens 4.6.2 e 4.6.3 da Ordem de Serviço CBMMG/ABM nº 126/2025, apresentando fundamentação clara e objetiva. </p>
+			<p> Caso identifique alguma inconsistência ou divergência, siga os itens 4.6.2 e 4.6.3 da Ordem de Serviço CBMMG/ABM nº 126/2025, apresentando fundamentação clara e objetiva. </p>
 			<p class="signature"> Atenciosamente,<br> Major BM Richelmy Murta Pinto<br> Coordenador de ATS / CEFS 2025 </p>
 		</section>
 		<div class="button-group">
-			<button type="button" data-url="https://drive.google.com/file/d/1ee-uC33SR8Ed51AXj-xeRBBjcxwvARpZ/view?usp=sharing"> Prova Corrigida</button>
-			<button type="button" data-url="https://drive.google.com/file/d/1dxFyjRv05Nf0hpgOfymP_OxGQeZY4PcT/view?usp=sharing"> Gabarito 1º Pelotão</button>
-			<button type="button" data-url="https://drive.google.com/file/d/1P0b_vnA5Nmxu18-tBitIqI43fwnDtvBe/view?usp=sharing"> Gabarito 2º Pelotão</button>
-			<button type="button" data-url="https://drive.google.com/file/d/1zo5VDstQOQq6eqLXjH72KLBAbK8UrHNB/view?usp=sharing"> Gabarito 3º Pelotão</button>
-			<button type="button" data-url="https://drive.google.com/file/d/1fQfisGZwE4GQhSqNIpQg2YZ-2IzFPZgu/view?usp=sharing"> Gabarito 4º Pelotão</button>
-			<button type="button" data-url="https://wa.me/5535984640729?text=Ol%C3%A1%20coordenador,%20eu%20tenho%20um%20apontamento:">💬 Tira-dúvidas</button>
+			<button type="button" data-url="https://drive.google.com/file/d/1ee-uC33SR8Ed51AXj-xeRBBjcxwvARpZ/view?usp=sharing"> Prova Corrigida </button>
+			<button type="button" data-url="https://drive.google.com/file/d/1dxFyjRv05Nf0hpgOfymP_OxGQeZY4PcT/view?usp=sharing"> Gabarito 1º Pelotão </button>
+			<button type="button" data-url="https://drive.google.com/file/d/1P0b_vnA5Nmxu18-tBitIqI43fwnDtvBe/view?usp=sharing"> Gabarito 2º Pelotão </button>
+			<button type="button" data-url="https://drive.google.com/file/d/1zo5VDstQOQq6eqLXjH72KLBAbK8UrHNB/view?usp=sharing"> Gabarito 3º Pelotão </button>
+			<button type="button" data-url="https://drive.google.com/file/d/1fQfisGZwE4GQhSqNIpQg2YZ-2IzFPZgu/view?usp=sharing"> Gabarito 4º Pelotão </button>
+			<button class="tira-duvidas" type="button" data-url="https://wa.me/5535984640729?text=Ol%C3%A1%20coordenador,%20eu%20tenho%20um%20apontamento:"> 💬 Tira-dúvidas </button>
 		</div>
-		</section>
 	</div>
 	<footer> &copy; 2025 Major BM Richelmy Murta Pinto. Todos os direitos reservados. </footer>
 	<script type="module">
@@ -202,5 +195,7 @@
 		});
 	</script>
 </body>
+
+</html>
 
 </html>
