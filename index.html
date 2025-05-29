@@ -7,15 +7,17 @@
 	<title>Amostra de Prova – ATS 2025</title>
 	<meta name="description" content="Amostra de Prova – Curso de Atendimento a Tentativas de Suicídio – CBMMG">
 	<meta name="author" content="Major BM Richelmy Murta Pinto">
+	<!-- WhatsApp Preview Image -->
+	<meta property="og:image" content="https://i.pinimg.com/736x/41/e2/c4/41e2c400b1bcd118b0dc559350430273.jpg">
 	<link rel="icon" href="https://i.pinimg.com/originals/33/9d/0c/339d0cc2f05bbb719debe6a5efb414dd.jpg">
 	<style>
-		/* CSS Reset e Variáveis */
+		/* Reset Básico e Variáveis */
 		:root {
 		  --font-sans: 'Segoe UI', Arial, sans-serif;
 		  --color-primary: #FFDD00;
 		  --color-dark: #003366;
-		  --bg-overlay: rgba(0, 0, 0, 0.8);
 		  --bg-header: rgba(0, 0, 0, 0.75);
+		  --bg-overlay: rgba(0, 0, 0, 0.8);
 		}
 		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 		html { font-size: 100%; scroll-behavior: smooth; }
@@ -23,22 +25,22 @@
 		  font-family: var(--font-sans);
 		  background: url('https://i.pinimg.com/originals/38/70/c5/3870c5a678e72a0c16ca58914e14df3f.jpg') center/cover no-repeat fixed;
 		  color: #fff;
+		  min-height: 100vh;
 		  display: flex;
 		  flex-direction: column;
 		  align-items: center;
 		  padding: 1rem;
-		  min-height: 100vh;
 		}
 		
-		/* Conteúdo Centrado */
+		/* Container Principal */
 		.content-wrapper {
 		  width: 100%;
-		  max-width: 48rem; /* 768px */
+		  max-width: 48rem;
 		  margin: auto;
 		  padding: 1.5rem;
 		}
 		
-		/* Cabeçalho */
+		/* Cabeçalho com overlay fumê */
 		header {
 		  background: var(--bg-header);
 		  border-radius: 0.5rem;
@@ -57,7 +59,7 @@
 		  margin-top: 0.5rem;
 		}
 		
-		/* Container de Orientações */
+		/* Seção de Orientações com overlay fumê */
 		.exam-container {
 		  background: var(--bg-overlay);
 		  border-radius: 0.5rem;
@@ -78,8 +80,6 @@
 		  text-align: justify;
 		}
 		.exam-container ul { list-style: disc inside; margin-left: 1rem; }
-		
-		/* Assinatura */
 		.signature {
 		  margin-top: 2rem;
 		  font-style: italic;
@@ -96,7 +96,7 @@
 		}
 		.button-group button {
 		  width: 100%;
-		  max-width: 25rem; /* 400px */
+		  max-width: 25rem;
 		  padding: 0.75rem;
 		  background: var(--color-dark);
 		  color: #fff;
@@ -120,7 +120,7 @@
 		  color: #ccc;
 		}
 		
-		/* Responsividade */
+		/* Responsivo */
 		@media(min-width: 48rem) {
 		  .exam-container { padding: 2.5rem; }
 		}
