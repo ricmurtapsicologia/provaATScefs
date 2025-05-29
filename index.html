@@ -9,8 +9,8 @@
 	<meta name="author" content="Major BM Richelmy Murta Pinto">
 	<!-- WhatsApp Preview Image -->
 	<meta property="og:image" content="https://i.pinimg.com/1200x/41/e2/c4/41e2c400b1bcd118b0dc559350430273.jpg">
-		<style>
-		/* Reset Básico e Variáveis */
+	<style>
+		/* Reset básico e variáveis */
 		:root {
 		  --font-sans: 'Segoe UI', Arial, sans-serif;
 		  --color-primary: #FFDD00;
@@ -18,11 +18,22 @@
 		  --bg-header: rgba(0, 0, 0, 0.75);
 		  --bg-overlay: rgba(0, 0, 0, 0.8);
 		}
-		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-		html { font-size: 100%; scroll-behavior: smooth; }
+		
+		*, *::before, *::after {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
+		
+		html {
+		  font-size: 100%;
+		  scroll-behavior: smooth;
+		}
+		
 		body {
 		  font-family: var(--font-sans);
-		  background: url('https://i.pinimg.com/originals/38/70/c5/3870c5a678e72a0c16ca58914e14df3f.jpg') center/cover no-repeat fixed;
+		  background: url('https://i.pinimg.com/originals/38/70/c5/3870c5a678e72a0c16ca58914e14df3f.jpg')
+		              center/cover no-repeat fixed;
 		  color: #fff;
 		  min-height: 100vh;
 		  display: flex;
@@ -31,46 +42,50 @@
 		  padding: 1rem;
 		}
 		
-		/* Container Principal */
+		/* Container principal */
 		.content-wrapper {
 		  width: 100%;
 		  max-width: 48rem;
-		  margin: auto;
+		  margin: 0 auto;
 		  padding: 1.5rem;
 		}
 		
-		/* Cabeçalho com overlay fumê */
+		/* Cabeçalho */
 		header {
 		  background: var(--bg-header);
 		  border-radius: 0.5rem;
 		  text-align: center;
 		  padding: 1.25rem;
 		  margin-bottom: 2rem;
-		  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.5);
+		  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
 		}
+		
 		header h1 {
 		  font-size: 2.25rem;
 		  color: var(--color-primary);
 		  text-shadow: 0.125rem 0.125rem 0.25rem #000;
 		}
+		
 		header h2 {
 		  font-size: 1rem;
 		  margin-top: 0.5rem;
 		}
 		
-		/* Seção de Orientações com overlay fumê */
+		/* Seção de orientações */
 		.exam-container {
 		  background: var(--bg-overlay);
 		  border-radius: 0.5rem;
 		  padding: 2rem;
-		  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.5);
+		  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.5);
 		}
+		
 		.exam-container h1 {
 		  font-size: 1.75rem;
 		  color: var(--color-primary);
 		  text-align: center;
 		  margin-bottom: 1.5rem;
 		}
+		
 		.exam-container p,
 		.exam-container ul {
 		  font-size: 1rem;
@@ -78,7 +93,12 @@
 		  margin-bottom: 1rem;
 		  text-align: justify;
 		}
-		.exam-container ul { list-style: disc inside; margin-left: 1rem; }
+		
+		.exam-container ul {
+		  list-style: disc inside;
+		  margin-left: 1rem;
+		}
+		
 		.signature {
 		  margin-top: 2rem;
 		  font-style: italic;
@@ -93,6 +113,7 @@
 		  margin-top: 2rem;
 		  align-items: center;
 		}
+		
 		.button-group button {
 		  width: 100%;
 		  max-width: 25rem;
@@ -106,9 +127,16 @@
 		  cursor: pointer;
 		  transition: background 0.3s, color 0.3s;
 		}
+		
 		.button-group button:hover {
 		  background: var(--color-primary);
 		  color: var(--color-dark);
+		}
+		
+		/* Botão Tira-dúvidas sempre em amarelo */
+		.button-group button.tira-duvidas {
+		  background: var(--color-primary) !important;
+		  color: var(--color-dark) !important;
 		}
 		
 		/* Rodapé */
@@ -119,9 +147,20 @@
 		  color: #ccc;
 		}
 		
-		/* Responsivo */
-		@media(min-width: 48rem) {
-		  .exam-container { padding: 2.5rem; }
+		/* Ajustes para telas maiores */
+		@media (min-width: 48rem) {
+		  .exam-container {
+		    padding: 2.5rem;
+		  }
+		}
+		
+		/* Em dispositivos móveis, remove overlays para mais leveza */
+		@media (max-width: 768px) {
+		  header,
+		  .exam-container {
+		    background: none !important;
+		    box-shadow: none !important;
+		  }
 		}
 	</style>
 </head>
@@ -129,27 +168,29 @@
 <body>
 	<div class="content-wrapper">
 		<header>
-			<h1>Amostra de Prova ATS/CEFS</h1>
-			<h2>Curso de Atendimento a Tentativas de Suicídio — CBMMG</h2>
+			<h1>Mostra de Prova ATS/CEFS</h1>
+			<h2>Disciplina de Atendimento a Tentativas de Suicídio — CBMMG</h2>
 		</header>
 		<section class="exam-container" aria-labelledby="exam-title">
 			<h1 id="exam-title">Orientações</h1>
-			<p><strong>Prezados alunos,</strong><br> A amostra de prova da disciplina de Atendimento a Tentativas de Suicídio (ATS) será disponibilizada de forma totalmente virtual. Essa modalidade permite que cada um realize a conferência em seu próprio ritmo, com tranquilidade e autonomia, respeitando a dinâmica dos seus estudos e demais compromissos acadêmicos. </p>
+			<p><strong>Prezados alunos,</strong></p>
+			<p> A mostra de prova da disciplina de Atendimento a Tentativas de Suicídio (ATS) será disponibilizada de forma totalmente virtual. Esta modalidade permite que cada um realize a conferência em seu próprio ritmo, com mais tranquilidade e autonomia. </p>
 			<p>Para facilitar o acesso ao conteúdo, siga atentamente as orientações abaixo:</p>
 			<ul>
-				<li>Acesse o botão correspondente ao seu pelotão para visualizar o <strong>gabarito individual</strong> da sua prova.</li>
-				<li>Utilize o botão <strong>Prova Corrigida</strong> para consultar as justificativas das questões, especialmente daquelas que possam ter gerado dúvida ou erro.</li>
+				<li> Acesse o botão correspondente ao seu pelotão para visualizar o <strong>gabarito individual</strong> da sua prova. </li>
+				<li> Use o botão <strong>Prova Corrigida</strong> para conferir as justificativas das questões, especialmente aquelas que geraram dúvida. </li>
 			</ul>
-			<p> Caso identifique alguma inconsistência, divergência ou tenha qualquer apontamento, você poderá protocolar <strong>recurso via SEI à ABM</strong> com fundamentação clara e objetiva. O prazo para envio é até <strong>04Jun25-Qua</strong>. </p>
+			<p> Caso identifique alguma inconsistência ou divergência, siga os itens 4.6.2 e 4.6.3 da Ordem de Serviço CBMMG/ABM nº 126/2025, apresentando fundamentação clara e objetiva. </p>
 			<p class="signature"> Atenciosamente,<br> Major BM Richelmy Murta Pinto<br> Coordenador de ATS / CEFS 2025 </p>
-			<div class="button-group">
-				<button type="button" data-url="https://drive.google.com/file/d/1ee-uC33SR8Ed51AXj-xeRBBjcxwvARpZ/view?usp=sharing"> Prova Corrigida</button>
-				<button type="button" data-url="https://drive.google.com/file/d/1dxFyjRv05Nf0hpgOfymP_OxGQeZY4PcT/view?usp=sharing"> Gabarito 1º Pelotão</button>
-				<button type="button" data-url="https://drive.google.com/file/d/1P0b_vnA5Nmxu18-tBitIqI43fwnDtvBe/view?usp=sharing"> Gabarito 2º Pelotão</button>
-				<button type="button" data-url="https://drive.google.com/file/d/1zo5VDstQOQq6eqLXjH72KLBAbK8UrHNB/view?usp=sharing"> Gabarito 3º Pelotão</button>
-				<button type="button" data-url="https://drive.google.com/file/d/1fQfisGZwE4GQhSqNIpQg2YZ-2IzFPZgu/view?usp=sharing"> Gabarito 4º Pelotão</button>
-				<button type="button" data-url="https://wa.me/5535984640729?text=Ol%C3%A1%20coordenador,%20eu%20tenho%20um%20apontamento:">💬 Tira-dúvidas</button>
-			</div>
+		</section>
+		<div class="button-group">
+			<button type="button" data-url="https://drive.google.com/file/d/1ee-uC33SR8Ed51AXj-xeRBBjcxwvARpZ/view?usp=sharing"> Prova Corrigida</button>
+			<button type="button" data-url="https://drive.google.com/file/d/1dxFyjRv05Nf0hpgOfymP_OxGQeZY4PcT/view?usp=sharing"> Gabarito 1º Pelotão</button>
+			<button type="button" data-url="https://drive.google.com/file/d/1P0b_vnA5Nmxu18-tBitIqI43fwnDtvBe/view?usp=sharing"> Gabarito 2º Pelotão</button>
+			<button type="button" data-url="https://drive.google.com/file/d/1zo5VDstQOQq6eqLXjH72KLBAbK8UrHNB/view?usp=sharing"> Gabarito 3º Pelotão</button>
+			<button type="button" data-url="https://drive.google.com/file/d/1fQfisGZwE4GQhSqNIpQg2YZ-2IzFPZgu/view?usp=sharing"> Gabarito 4º Pelotão</button>
+			<button type="button" data-url="https://wa.me/5535984640729?text=Ol%C3%A1%20coordenador,%20eu%20tenho%20um%20apontamento:">💬 Tira-dúvidas</button>
+		</div>
 		</section>
 	</div>
 	<footer> &copy; 2025 Major BM Richelmy Murta Pinto. Todos os direitos reservados. </footer>
